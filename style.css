@@ -1,0 +1,182 @@
+
+/* GENERAL PAGE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #eaf4ff, #c9e2ff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #193b63;
+}
+
+/* PAGE HEADER */
+.header {
+    background: linear-gradient(135deg, #102f55, #245b91, #438bd0);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin: -40px -20px 35px;
+    border-bottom: 4px solid #9bcaff;
+    box-shadow: 0 5px 15px #b5d0ed;
+}
+
+.header h1 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.header p {
+    color: #d9ebff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* FORM CARD */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px #9bbfe0;
+    border: 1px solid #d5e8fa;
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 14px 35px #9bbfe0;
+}
+
+/* FORM HEADING */
+.container h1 {
+    text-align: center;
+    color: #24558a;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.container p {
+    text-align: center;
+    color: #7894b3;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* FORM LABELS */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #315d88;
+}
+
+/* INPUT FIELDS */
+input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 11px;
+    margin: 0 0 18px;
+    border: 1.5px solid #d0e2f5;
+    border-radius: 10px;
+    background: #f7faff;
+    font-size: 13px;
+    color: #193b63;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #9bb1ca;
+}
+
+input:focus {
+    border-color: #3978bd;
+    background: white;
+    box-shadow: 0 0 0 3px #d9ebff;
+}
+
+/* BUTTON */
+button {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 13px 8px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #63a8ed, #3978bd, #193b63);
+    background-size: 200% 200%;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px #c5ddf5;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-position: right center;
+    box-shadow: 0 8px 18px #a6c8ec;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px #a6c8ec;
+}
+
+/* RESULT MESSAGE */
+#result {
+    text-align: center;
+    margin-top: 18px;
+    padding: 12px 8px;
+    border: 1px solid #d5e8fa;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f2f8ff, #e5f1ff);
+    color: #24558a;
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: #7894b3;
+    font-size: 10px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 400px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .header {
+        margin: -30px -15px 25px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 300px;
+        padding: 22px;
+    }
+}
