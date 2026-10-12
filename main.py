@@ -12,7 +12,7 @@ def name_finder(e):
     candidate_name = first_name + ' ' + last_name
     student_checker = candidate_name in sapphire_club
 
-    display_message = (f'Sorry {candidate_name.title()}, your name is not on the list.',f'Congratulations {candidate_name.title()}! You are now part of the 10 SAPPHIRE Club.')
+    display_message = (f'Sorry{candidate_name.title()}, your name is not on the list.',f'Congratulations {candidate_name.title()}! You are now part of the 10 SAPPHIRE Club.')
 
     display(display_message[student_checker], target='result')
 
